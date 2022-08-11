@@ -14,14 +14,14 @@ if ( get_the_author_meta( 'description' ) ) :
 					<div id="entry-author-info">
 						<div id="author-avatar">
 							<?php
-							$author_bio_avatar_size = apply_filters( 'twentyten_author_bio_avatar_size', 60 );
+							$author_bio_avatar_size = apply_filters( 'be_good_author_bio_avatar_size', 60 );
 							echo get_avatar( get_the_author_meta( 'user_email' ), $author_bio_avatar_size );
 							?>
 						</div>
 						<div id="author-description">
 							<h2 class="entry-title">
 							<?php
-							printf( __( 'About %s', 'twentyten' ), get_the_author() );
+							printf( __( 'About %s', 'be-good' ), get_the_author() );
 							?>
 							</h2>
 							<?php the_author_meta( 'description' ); ?>
